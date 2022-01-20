@@ -1,7 +1,8 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
-import "./topbar.css";
+import logo from "../../assets/logo.png"
+import "./navbar.css";
 
 function Navbar() {
   const { user, dispatch } = useContext(Context);
@@ -13,10 +14,7 @@ function Navbar() {
   return (
     <div className="top">
       <div className="topLeft">
-        <i className="topIcon fab fa-facebook-square"></i>
-        <i className="topIcon fab fa-twitter-square"></i>
-        <i className="topIcon fab fa-pinterest-square"></i>
-        <i className="topIcon fab fa-instagram-square"></i>
+          <img className="topImg" src={logo} alt="logo"/>
       </div>
       <div className="topCenter">
         <ul className="topList">

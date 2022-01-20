@@ -1,5 +1,5 @@
 import { Navbar } from "./components"
-import { Home, Login, Register, Profile, Write } from "./pages";
+import { Home, Login, Register, Profile, Write, About, Projects, Tutoring, Blog } from "./pages";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useContext } from "react";
 import { Context } from "./context/Context";
@@ -11,6 +11,10 @@ function App() {
       <Navbar />
       <Routes>
         <Route exact path="/" element={ <Home />} />
+        <Route exact path="/about" element={ <About />} />
+        <Route exact path="/projects" element={ <Projects />} />
+        <Route exact path="/tutoring" element={ <Tutoring />} />
+        <Route exact path="/blog" element={ <Blog />} />
         <Route path="/register" element={user ? <Home /> : <Register />} />
         <Route path="/login" element={user ? <Home /> : <Login />} />
         <Route path="/write" element={user ? <Write /> : <Login />} />

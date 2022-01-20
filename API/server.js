@@ -25,7 +25,7 @@ mongoose
       cb(null, "images");
     },
     filename: (req, file, cb) => {
-      cb(null, req.body.name);
+      cb(null, "hello.png");
     },
   });
   

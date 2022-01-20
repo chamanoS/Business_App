@@ -4,3 +4,8 @@
     margin: 0;
     scroll-behavior: smooth;
   }
+
+.link {
+  color: unset;
+  text-decoration: none;
+}
