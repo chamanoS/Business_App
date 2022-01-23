@@ -55,7 +55,7 @@ function Navbar() {
       </div>
       <div className="topRight">
         {user ? (
-          <Link to="/profiles">
+          <Link to="/profile">
             <img className="topImg" src={PF+user.profilePic} alt="" />
           </Link>
         ) : (
