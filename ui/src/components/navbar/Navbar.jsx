@@ -1,7 +1,7 @@
-import { useContext } from "react";
+import React,{ useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
-import logo from "../../assets/logox.png"
+import logo from "../../assets/logoxa.png"
 import "./navbar.css";
 
 function Navbar() {
@@ -78,4 +78,4 @@ function Navbar() {
   );
 }
 
-export default Navbar
+export default Navbar;

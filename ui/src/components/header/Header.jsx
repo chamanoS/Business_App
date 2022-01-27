@@ -1,16 +1,14 @@
-import "./header.css";
+import React from 'react';
+import './header.css';
+import Video from '../../assets/videos/videox.mp4'
 
- function Header() {
+function Header() {
   return (
-    <div className="header">
-      <div className="headerTitles">
-        <span className="headerTitleLg">Blog</span>
-      </div>
-      <img
-        className="headerImg"
-        src="https://images.pexels.com/photos/1167355/pexels-photo-1167355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-        alt=""
-      />
+    <div className='hero-container'>
+      <video src={Video} autoPlay loop muted />
+      <h3>Social Entrepreneurship</h3>
+      <p>Connecting Investment Capital To Social Purposes</p>
+      
     </div>
   );
 }
