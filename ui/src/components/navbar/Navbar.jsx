@@ -1,7 +1,7 @@
 import React,{ useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
-import logo from "../../assets/logoxa.png"
+import logo from "../../assets/CAxx.png"
 import "./navbar.css";
 
 function Navbar() {
