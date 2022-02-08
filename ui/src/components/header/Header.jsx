@@ -1,14 +1,17 @@
 import React from 'react';
-import './header.css';
-import Video from '../../assets/videos/videox.mp4'
+import Image from '../../assets/images/home.png'
+
+import "./header.css";
 
 function Header() {
   return (
-    <div className='hero-container'>
-      <video src={Video} autoPlay loop muted />
-      <h3>Social Entrepreneurship</h3>
-      <p>Connecting Investment Capital To Social Purposes</p>
+    <div className="header">
       
+      <img
+        className="headerImg"
+        src={Image}
+        alt=""
+      />
     </div>
   );
 }

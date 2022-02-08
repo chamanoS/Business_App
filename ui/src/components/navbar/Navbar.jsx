@@ -1,7 +1,7 @@
 import React,{ useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
-import logo from "../../assets/CAxx.png"
+import logo from "../../assets/images/CAxx.png";
 import "./navbar.css";
 
 function Navbar() {
@@ -35,7 +35,7 @@ function Navbar() {
           </li>
           <li className="topListItem">
             <Link className="link" to="/tutoring">
-              TUTORING
+              SERVICES
             </Link>
           </li>
           <li className="topListItem">
