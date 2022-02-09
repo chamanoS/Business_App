@@ -13,9 +13,24 @@ padding: 0.5rem;
 `
 const ABOUT = styled(NavLink)`
 text-decoration: none;
+color:black;
 z-index:1;
 `
-
+const SKILLS = styled(NavLink)`
+color: black;
+text-decoration: none;
+z-index:1;
+`
+const BLOG = styled(NavLink)`
+color: black;
+position: fixed;
+top: 60%;
+right: calc(2.2rem + 2vw);
+transform: rotate(90deg) translate(-50%, -50%);
+text-decoration: none;
+font-size:24px;
+z-index:1;
+`
 
 function Home() {
 
@@ -43,6 +58,38 @@ function Home() {
                     About.
                 </motion.h2>
             </ABOUT>
+            <SKILLS to="/skills">
+                <motion.h2
+                initial={{
+                    y:200,
+                    transition: { type:'spring', duration: 1.5, delay:1}
+                }}
+                animate={{
+                    y:0,
+                    transition: { type:'spring', duration: 1.5, delay:1}
+                }}
+                 whileHover={{scale: 1.1}}
+                whileTap={{scale: 0.9}}
+                >
+                    My Skills.
+                </motion.h2>
+            </SKILLS>
+            <BLOG to="/blog">
+                <motion.h2
+                initial={{
+                    y:-200,
+                    transition: { type:'spring', duration: 1.5, delay:1}
+                }}
+                animate={{
+                    y:0,
+                    transition: { type:'spring', duration: 1.5, delay:1}
+                }}
+                whileHover={{scale: 1.1}}
+                whileTap={{scale: 0.9}}
+                >
+                    Blog
+                </motion.h2>
+            </BLOG>
         </Container>
       
       
