@@ -14,11 +14,19 @@ padding: 0.5rem;
 const ABOUT = styled(NavLink)`
 text-decoration: none;
 color:black;
+position: fixed;
+top: 85%;
+left: 30%;
+font-size:22px;
 z-index:1;
 `
 const SKILLS = styled(NavLink)`
 color: black;
 text-decoration: none;
+position: fixed;
+top: 85%;
+left: 60%;
+font-size:22px;
 z-index:1;
 `
 const BLOG = styled(NavLink)`
@@ -28,7 +36,7 @@ top: 60%;
 right: calc(2.2rem + 2vw);
 transform: rotate(90deg) translate(-50%, -50%);
 text-decoration: none;
-font-size:24px;
+font-size:22px;
 z-index:1;
 `
 
@@ -58,7 +66,7 @@ function Home() {
                     About.
                 </motion.h2>
             </ABOUT>
-            <SKILLS to="/skills">
+            <SKILLS to="/projects">
                 <motion.h2
                 initial={{
                     y:200,
@@ -71,7 +79,7 @@ function Home() {
                  whileHover={{scale: 1.1}}
                 whileTap={{scale: 0.9}}
                 >
-                    My Skills.
+                    Projects.
                 </motion.h2>
             </SKILLS>
             <BLOG to="/blog">

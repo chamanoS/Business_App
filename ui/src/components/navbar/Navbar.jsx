@@ -24,23 +24,8 @@ function Navbar() {
             </Link>
           </li>
           <li className="topListItem">
-            <Link className="link" to="/about">
-              ABOUT
-            </Link>
-          </li>
-          <li className="topListItem">
-            <Link className="link" to="/projects">
-              PROJECTS
-            </Link>
-          </li>
-          <li className="topListItem">
             <Link className="link" to="/tutoring">
               SERVICES
-            </Link>
-          </li>
-          <li className="topListItem">
-            <Link className="link" to="/blog">
-              BLOG
             </Link>
           </li>
           <li className="topListItem">
