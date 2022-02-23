@@ -5,16 +5,13 @@ import styled from 'styled-components'
 import { Facebook, Github, Twitter, YouTube } from '../components/AllSvgs'
 
 
-
 const Icons = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
-
 position: fixed;
 bottom: 0;
-left: 2rem;
-
+left: 9rem;
 z-index:3;
 
 &>*:not(:last-child){

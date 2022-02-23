@@ -2,6 +2,10 @@ import React,{ useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
 import logo from "../../assets/images/CAxx.png";
+import Register from "../../assets/images/regist.png";
+import Login from "../../assets/images/login.png";
+import Write from "../../assets/images/writer.png";
+import Home from '../../assets/images/goldhome.png'
 import "./navbar.css";
 
 function Navbar() {
@@ -20,17 +24,12 @@ function Navbar() {
         <ul className="topList">
           <li className="topListItem">
             <Link className="link" to="/">
-              HOME
-            </Link>
-          </li>
-          <li className="topListItem">
-            <Link className="link" to="/tutoring">
-              SERVICES
+            <img className="topImge" src={Home}  alt="logo"/>
             </Link>
           </li>
           <li className="topListItem">
             <Link className="link" to="/write">
-              WRITE
+            <img className="topImge" src={Write} alt="logo"/>
             </Link>
           </li>
           <li className="topListItem" onClick={handleLogout}>
@@ -47,12 +46,12 @@ function Navbar() {
           <ul className="topList">
             <li className="topListItem">
               <Link className="link" to="/login">
-                LOGIN
+              <img className="topImge" src={Login} alt="logo"/>
               </Link>
             </li>
             <li className="topListItem">
               <Link className="link" to="/register">
-                REGISTER
+              <img className="topImge" src={Register} alt="logo"/>
               </Link>
             </li>
           </ul>

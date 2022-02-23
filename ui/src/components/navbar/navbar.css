@@ -33,7 +33,29 @@
     object-fit: cover;
     cursor: pointer;
   }
-  
+  .topImge {
+    object-fit: cover;
+    cursor: pointer;
+    width: 90px;
+    height: 90px;
+    background-color: #FCF6F4;
+    border-radius: 65%;
+    position: fixed;
+    top: 1%;
+    left: 30%;
+    z-index:3;
+  }
+ 
+
+  .topImge:hover{
+      background-color: rgba(0,255,0,0.4);
+      box-shadow: 0 0 8px 6px rgba(0,255,0,0.2);
+  }
+
+  .topImge>*:first-child{
+      text-decoration: none;
+      color: inherit;
+  }
   .topList {
     display: flex;
     justify-content: center;
